@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+@font-face {
+    font-family:'futura' ;
+    src: url('../font/FuturaLT-Bold.woff')format('opentype');
+    font-weight: normal;
+}
+
+
+:root{
+    --cor0:#E67D3B;
+    --cor1:#3F2773;
+    --cor2:#066196;
+    --cor3:#4eb7f4bb;
+    --font-padrao: sans-serif, Helvetica;
+    --font-destaque:'futura';
+}
+
+body{
+    min-height: 100vh;
+    background-color: #4eb7f4bb;
+}
+
+header{
+    width: 100vw;
+    
+}
+
+span#burguer{
+    background-color:var(--cor1);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+span#burguer:hover{
+    background-color: #326e90;
+    color: black;
+}
+
+nav {
+    display: none;
+
+}
+nav > ul {
+    list-style-type: none;
+}
+nav  a {
+    display: block;
+    padding: 10px;
+    color: rgba(199, 199, 199, 0.809);
+    background-color: #3F2773;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+nav li :hover{
+    background-color: #4089b3;
+    color: rgba(0, 255, 255, 0.826);
+}
+
+nav > a:hover{
+    text-decoration: underline;
+    color:rgba(1, 118, 251, 0.837);
+}
+
+img#logo-um{
+    display: none;
+}
+
+a.externo::after {
+    content: '\00A0\260F';
+}
+
+section{
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+    line-height: 2em;
+    padding-left: 20px;
+    font-size: 1.8vw;
+    font-family: var(--font-padrao);
+}
+section > p{
+    padding: 5px;
+    display: inline-block;
+    background-color: #e67d3bbe ;
+    border-radius: 10px;
+    color: black;
+    font-size: 2.0vw;
+    font-weight: lighter;
+}
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.566);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    
+
+}
+#imagem1{
+    background-image: url('../imagens/fotoinicia.png');
+    background-position: top center;
+    color: var(--cor0);
+}
+#imagem2{
+    background-image: url('../imagens/conta-g.png');
+    background-position: center center;
+    color: var(--cor0);
+}
+#imagem3{
+    background-image: url('../imagens/credit.png');
+    color: var(--cor0);
+}
+#imagem4{
+    background-image: url('../imagens/casa-g.jpg');
+    color: var(--cor0);
+}
+#imagem5{
+    background-image: url('../imagens/cartao-g.png');
+    color: var(--cor0);
+}
+#imagem6{
+    background-image: url('../imagens/seguro-g.png');
+    color: var(--cor0);
+}
+ h1{
+    font-family: var(--font-destaque);
+    color: var(--cor2);
+    font-weight: bold;
+    font-size: 5.0vw;
+   
+    font-variant: small-caps;
+    padding-left: 10px;
+}
+h2{
+    font-family: var(--font-destaque);
+    font-size: 3.5vw;
+    font-weight: bold;
+    text-indent: 10px;
+    font-variant: small-caps;
+    color: var(--cor2);
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.653);
+   
+   
+}
+h3{
+    font-family: var(--font-destaque);
+    font-size: 3.5vw;
+    font-weight: bold;
+    text-indent: 10px;
+    font-variant: small-caps;
+    color: var(--cor2);
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.653);
+   
+}
+
+
+footer{
+    height: 10px;
+    
+}
+footer  a{
+    text-decoration: none;
+}
+footer :hover a{
+    text-decoration: underline black;
+}
+.p-footer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    align-items: center;
+    font-weight: normal;
+    font-size: 1em;
+    font-family: var(--font-padrao);
+    color: white;
+}
+
+.img-footer{
+    display: inline;
+    padding:10px 0px 0px 100px;
+    
+    
+}

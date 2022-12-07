@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realiza</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+
+<body onresize="mudouTamanho()">
+    <header>    
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+        </span>
+        <img id ="logo-um"src="imagens/logo.png" alt="logo" >
+         <nav id="menu">
+           <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Quem Somos</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#" class="externo">Fale Conosco</a></li>
+           </ul>  
+         </nav>
+         
+    </header>
+            
+            <section class="imagem" id="imagem1" >
+                <h1>o que é correspondente caixa?</h1>
+                <p>Correspondente é uma empresa contratada<br> 
+                    pela CAIXA para prestar serviços à comunidade<br>em seu nome e com critérios por ela estabelecidos.
+                </p>
+            </section>
+
+
+            <section class="imagem" id="imagem2">
+                <h2>Abertura de conta</h2>
+                <p>
+                    Com a Conta Corrente CAIXA, você recebe depósitos,<br> efetua saques e pagamentos, realiza aplicações, obtém<br> empréstimos e financia sua casa própria com mais facilidade.<br>
+                    A Poupança da CAIXA ajuda milhões de brasileiros <br> a poupar dinheiro há mais de 150 anos.
+                </p>
+            </section>  
+
+           
+
+            <section class="imagem" id="imagem3">
+                <h3 class="nome-texto">Empréstimos PF(Consignado )</h3> 
+                <p>O empréstimo consignado é um tipo de crédito oferecido<br> pelas instituições financeiras que tem suas parcelas<br> descontadas diretamente da folha de pagamento,<br> holerite, contracheque ou benefício do INSS.
+                </p>
+            </section>
+            
+
+            <section class="imagem" id="imagem4">
+                <h3 class="nome-texto">Financiamento habitacional</h3>
+                <p>A Caixa é o banco do financiamento de imóveis,<br>
+                     pois tem melhores taxas de juros, financia em até 36 anos<br>
+                     ,tem uma extensa rede que inclui parcerias com imobiliárias<br>
+                     construtoras, entre outros.Por ser um banco público <br>
+                     abraça e integra programas sociais e é o banco carro chefe<br>
+                     do principal programa habitacional no Brasil atualmente.</p>
+            </section> 
+
+           
+
+            <section class="imagem" id='imagem5'>
+                <h3 class="nome-texto" >Cartões de crédito </h3>
+                <p>É um empréstimo na forma de um cartão que você<br> 
+                 usa para fazer compras e paga tudo em um dia do mês.<br>
+                 Você só paga juros se não pagar a fatura no dia do vencimento<br>.
+                 O cartão de crédito é mais seguro que o dinheiro e você<br> 
+                 tem mais controle dos seus gastos.Todas as compras são<br>
+                 apresentadas com data e valor na sua fatura e no<br> Aplicativo Cartões CAIXA.</p>
+            </section> 
+             
+            <section class="imagem" id='imagem6'>
+                <h3 class="nome-texto">Produtos da CAIXA Seguros Seguros, Consórcios, Capitalização</h3>
+               
+                 <p>O Seguro Residencial é a melhor forma de zelar pela<br> 
+                    segurança da sua casa e o bem-estar da sua família.<br>
+                    Com esse seguro você tem a garantia de proteção para<br>
+                    seu imóvel e os objetos internos da casa.
+                 </p>
+            </section>  
+
+           <footer>
+           
+            <a href="http://127.0.0.1:5500/index.html" target="_self"><img class="img-footer" src="imagens/logo-nova-foote1.png" alt="imgfooter">
+            </a>
+            <p class="p-footer"> 
+            Realiza &copy; 2022 Copyright &reg;  <a  href="#" target="_blank"> &nbsp;HSZ</a>
+            </p>
+          </footer>
+
+
+    <script>
+        function clickMenu(){
+            if (menu.style.display =='block'){
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                menu.style.display = 'block'
+            } else{
+                menu.style.display = 'none'
+            }
+        }
+    </script>      
+
+</body>
+</html>
